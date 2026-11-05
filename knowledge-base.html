@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knowledge Base | BrijHub Help &amp; Support</title>
+  <meta name="description" content="Step-by-step guides from BrijHub on starting a project, feedback and approvals, billing, backups and staying secure.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Common styles (every page) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Shared by the six help and support pages -->
+  <link rel="stylesheet" href="assets/css/support.css">
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      .pg-hero__inner > * { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div data-include="header"></div>
+
+  <main id="main" class="sp-page sp-page--kb">
+
+    <!-- ================= Banner ================= -->
+    <section class="pg-hero" aria-labelledby="pg-title">
+      <div class="pg-hero__bg" aria-hidden="true"></div>
+      <div class="pg-hero__grid" aria-hidden="true"></div>
+      <span class="pg-hero__orb pg-hero__orb--1" aria-hidden="true"></span><span class="pg-hero__orb pg-hero__orb--2" aria-hidden="true"></span>
+      <span class="pg-hero__ring pg-hero__ring--1" aria-hidden="true"></span><span class="pg-hero__ring pg-hero__ring--2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="pg-hero__inner">
+          <nav aria-label="Breadcrumb"><ol class="pg-hero__crumbs"><li><a href="index.html">Home</a></li><li>Help &amp; Support</li><li aria-current="page">Knowledge Base</li></ol></nav>
+          <span class="pg-hero__eyebrow">Knowledge Base</span>
+          <h1 class="pg-hero__title" id="pg-title">Guides <span>That Save You Time</span></h1>
+          <p class="pg-hero__text">Clear, step-by-step help on working with BrijHub and looking after your digital products.</p>
+          <label class="pg-search" for="kbSearch"><svg class="ix" aria-hidden="true"><use href="#ix-search"/></svg><input id="kbSearch" type="search" placeholder="Search the guides, e.g. invoice, backup, feedback..." autocomplete="off" spellcheck="false"></label>
+        </div>
+      </div>
+      <div class="pg-hero__wave" aria-hidden="true">
+        <svg class="pg-hero__wave-back" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+        <svg class="pg-hero__wave-front" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+      </div>
+    </section>
+
+    <!-- ================= Guides ================= -->
+    <section class="sec sp-light sp-dots kb-main" id="guides" aria-labelledby="guides-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">All Guides</span><h2 class="sec__title" id="guides-title">Find Your <span>Guide</span></h2></div>
+        <ul class="chips" aria-label="Filter guides by topic">
+          <li><button type="button" class="chip" data-cat="all" aria-pressed="true">All <small>12</small></button></li><li><button type="button" class="chip" data-cat="start" aria-pressed="false">Getting started <small>3</small></button></li><li><button type="button" class="chip" data-cat="projects" aria-pressed="false">Projects <small>3</small></button></li><li><button type="button" class="chip" data-cat="billing" aria-pressed="false">Billing <small>2</small></button></li><li><button type="button" class="chip" data-cat="tech" aria-pressed="false">Technical <small>2</small></button></li><li><button type="button" class="chip" data-cat="security" aria-pressed="false">Security <small>2</small></button></li>
+        </ul>
+        <div class="kb-bar"><p class="kb-bar__count" data-kb-count role="status" aria-live="polite">Showing 12 guides</p></div>
+        <div class="kb-list faq__list" data-faq="multi" data-kb-list>
+            <div class="faq__item kb-item is-open" data-cat="start">
+              <h3><button type="button" class="faq__q" id="kq1" aria-expanded="true" aria-controls="ka1"><span class="kb-item__no" aria-hidden="true">01</span><span class="kb-item__text">How a project starts with BrijHub</span><span class="kb-item__tag">Getting started</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka1" role="region" aria-labelledby="kq1"><div><ol><li>Send us a message or request a quote describing your goals.</li><li>We arrange a free discovery call to understand your needs.</li><li>You receive a written proposal with scope, timeline and price.</li><li>After you approve it and the agreed first payment is made, work begins.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="start">
+              <h3><button type="button" class="faq__q" id="kq2" aria-expanded="false" aria-controls="ka2"><span class="kb-item__no" aria-hidden="true">02</span><span class="kb-item__text">What we need from you to begin</span><span class="kb-item__tag">Getting started</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka2" role="region" aria-labelledby="kq2"><div><ol><li>A short description of your goals and who your users are.</li><li>Any existing designs, brand materials, content or access we should use.</li><li>The name of one person who can make decisions and approve work.</li><li>Your preferred ways and times to communicate.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="start">
+              <h3><button type="button" class="faq__q" id="kq3" aria-expanded="false" aria-controls="ka3"><span class="kb-item__no" aria-hidden="true">03</span><span class="kb-item__text">How to write a helpful project brief</span><span class="kb-item__tag">Getting started</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka3" role="region" aria-labelledby="kq3"><div><ol><li>Explain the problem you want to solve, not only the solution you imagine.</li><li>List must-have features and nice-to-have features separately.</li><li>Share examples of products you like, and say why.</li><li>Mention deadlines, budget range and any technical limits.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="projects">
+              <h3><button type="button" class="faq__q" id="kq4" aria-expanded="false" aria-controls="ka4"><span class="kb-item__no" aria-hidden="true">04</span><span class="kb-item__text">How feedback and approvals work</span><span class="kb-item__tag">Projects</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka4" role="region" aria-labelledby="kq4"><div><ol><li>We share progress at the end of each short work cycle.</li><li>You review the work and send consolidated feedback.</li><li>We update the work and ask you to approve the milestone.</li><li>Approved milestones are invoiced as agreed in your proposal.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="projects">
+              <h3><button type="button" class="faq__q" id="kq5" aria-expanded="false" aria-controls="ka5"><span class="kb-item__no" aria-hidden="true">05</span><span class="kb-item__text">How to request a change to the scope</span><span class="kb-item__tag">Projects</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka5" role="region" aria-labelledby="kq5"><div><ol><li>Tell us what you would like to add or change.</li><li>We estimate the effect on cost and timeline and send you a short written quote.</li><li>Work on the change begins only after you approve the quote.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="projects">
+              <h3><button type="button" class="faq__q" id="kq6" aria-expanded="false" aria-controls="ka6"><span class="kb-item__no" aria-hidden="true">06</span><span class="kb-item__text">Preparing content for your website or app</span><span class="kb-item__tag">Projects</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka6" role="region" aria-labelledby="kq6"><div><ol><li>Gather text, images and documents early, and save them in one shared folder.</li><li>Make sure you own, or have a licence for, every image, font and text you give us.</li><li>Tell us if anything needs legal review, such as claims, prices or testimonials.</li><li>Keep a copy of everything you send us.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="billing">
+              <h3><button type="button" class="faq__q" id="kq7" aria-expanded="false" aria-controls="ka7"><span class="kb-item__no" aria-hidden="true">07</span><span class="kb-item__text">How invoices and payments work</span><span class="kb-item__tag">Billing</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka7" role="region" aria-labelledby="kq7"><div><ol><li>Your proposal sets out the payment schedule, usually linked to milestones.</li><li>Invoices are sent by email with the amount, taxes and due date.</li><li>Pay using the method shown on the invoice. We never ask for card details by email.</li><li>See the <a href="financial-policies.html">Financial Policies</a> for full details.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="billing">
+              <h3><button type="button" class="faq__q" id="kq8" aria-expanded="false" aria-controls="ka8"><span class="kb-item__no" aria-hidden="true">08</span><span class="kb-item__text">How refunds are handled</span><span class="kb-item__tag">Billing</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka8" role="region" aria-labelledby="kq8"><div><ol><li>Read the <a href="refund-policy.html">Refund Policy</a> to check eligibility.</li><li>Send your request with the invoice number and reason.</li><li>We review it and reply within the time stated in the policy.</li><li>Approved refunds are returned to your original payment method.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="tech">
+              <h3><button type="button" class="faq__q" id="kq9" aria-expanded="false" aria-controls="ka9"><span class="kb-item__no" aria-hidden="true">09</span><span class="kb-item__text">What is a staging site and why do we use it?</span><span class="kb-item__tag">Technical</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka9" role="region" aria-labelledby="kq9"><div><ol><li>A staging site is a private copy of your product used for testing.</li><li>We publish new work there first so you can review it safely.</li><li>After your approval, the same changes are released to the live site.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="tech">
+              <h3><button type="button" class="faq__q" id="kq10" aria-expanded="false" aria-controls="ka10"><span class="kb-item__no" aria-hidden="true">10</span><span class="kb-item__text">Simple ways to keep backups of your data</span><span class="kb-item__tag">Technical</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka10" role="region" aria-labelledby="kq10"><div><ol><li>Keep at least one backup copy in a different place from the original.</li><li>Automate backups so they do not depend on someone remembering.</li><li>Test restoring a backup from time to time to be sure it works.</li><li>Ask us about backup options for your project.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="security">
+              <h3><button type="button" class="faq__q" id="kq11" aria-expanded="false" aria-controls="ka11"><span class="kb-item__no" aria-hidden="true">11</span><span class="kb-item__text">Basic security habits for your team</span><span class="kb-item__tag">Security</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka11" role="region" aria-labelledby="kq11"><div><ol><li>Use long, unique passwords and a password manager.</li><li>Turn on two-factor authentication wherever it is available.</li><li>Install software updates promptly.</li><li>Limit who has access to sensitive systems and remove access when people leave.</li></ol></div></div>
+            </div>
+            <div class="faq__item kb-item" data-cat="security">
+              <h3><button type="button" class="faq__q" id="kq12" aria-expanded="false" aria-controls="ka12"><span class="kb-item__no" aria-hidden="true">12</span><span class="kb-item__text">How to spot a phishing message</span><span class="kb-item__tag">Security</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+              <div class="faq__a" id="ka12" role="region" aria-labelledby="kq12"><div><ol><li>Be careful with unexpected messages that create urgency or ask for payment or passwords.</li><li>Check the sender address and hover over links before you click.</li><li>If a message claims to be from BrijHub and asks for bank detail changes, call us on a known number first.</li><li>When in doubt, do not click, and report it to your IT contact.</li></ol></div></div>
+            </div>
+        </div>
+        <div class="kb-empty" data-kb-empty hidden><strong>No guides match your search</strong><p>Try another word, or <a href="submit-ticket.html">ask our team</a>.</p></div>
+        <p class="sp-small sp-disclaimer">These guides give general information to help you work with us and look after your systems. They are not legal, financial or security advice for your specific situation. Please check your written agreement for the terms that apply to your project.</p>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="more" aria-labelledby="more-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">More Support</span><h2 class="sec__title" id="more-title">Still Need <span>Some Help?</span></h2><p class="sec__lead">If a guide does not answer your question, our team is happy to help.</p></div>
+        <div class="sp-grid sp-grid--3"><a class="sp-card" href="submit-ticket.html" data-aos="fade-up" data-aos-delay="0"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-layers"/></svg></span><h3>Submit a Ticket</h3><p>Describe your issue and we will respond.</p></a><a class="sp-card" href="customer-support.html" data-aos="fade-up" data-aos-delay="100"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-headset"/></svg></span><h3>Customer Support</h3><p>See all the ways to reach our team.</p></a><a class="sp-card" href="faqs.html" data-aos="fade-up" data-aos-delay="200"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-target"/></svg></span><h3>FAQs</h3><p>Read answers to common questions.</p></a></div>
+      </div>
+    </section>
+
+    <section class="sec cta cta--tint" aria-labelledby="cta-title">
+      <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+      <span class="cta__orb cta__orb--1" data-parallax="0.25" aria-hidden="true"></span><span class="cta__orb cta__orb--2" data-parallax="-0.2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="cta__inner" data-aos="zoom-in">
+          <span class="sec__label">Can't Find An Answer?</span>
+          <h2 class="sec__title" id="cta-title">Our Team Is <span>One Message Away</span></h2>
+          <p class="sec__lead">Send us your question and we will reply with the help you need.</p>
+          <div class="cta__actions"><a href="submit-ticket.html" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Submit a Ticket</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></a><a href="tel:9711101482" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Call 9711101482</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-phone"/></svg></span></a></div>
+          <p class="sp-cta-note">This page gives general information and is not a contract or a guarantee. Response times are targets. Terms for any project or support plan are set out in your written agreement.</p>
+        </div>
+      </div>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+    </section>
+
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/search-index.js"></script>
+  <script src="assets/js/header-markup.js"></script>
+  <script src="assets/js/footer-markup.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/components.js"></script>
+  <!-- Shared by the six help and support pages -->
+  <script src="assets/js/support.js"></script>
+</body>
+
+</html>

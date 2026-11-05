@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Submit a Ticket | BrijHub Help &amp; Support</title>
+  <meta name="description" content="Submit a support ticket to BrijHub. Describe your issue, choose a priority and our team will respond.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Common styles (every page) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Shared by the six help and support pages -->
+  <link rel="stylesheet" href="assets/css/support.css">
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      .pg-hero__inner > * { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div data-include="header"></div>
+
+  <main id="main" class="sp-page sp-page--ticket">
+
+    <!-- ================= Banner ================= -->
+    <section class="pg-hero" aria-labelledby="pg-title">
+      <div class="pg-hero__bg" aria-hidden="true"></div>
+      <div class="pg-hero__grid" aria-hidden="true"></div>
+      <span class="pg-hero__orb pg-hero__orb--1" aria-hidden="true"></span><span class="pg-hero__orb pg-hero__orb--2" aria-hidden="true"></span>
+      <span class="pg-hero__ring pg-hero__ring--1" aria-hidden="true"></span><span class="pg-hero__ring pg-hero__ring--2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="pg-hero__inner">
+          <nav aria-label="Breadcrumb"><ol class="pg-hero__crumbs"><li><a href="index.html">Home</a></li><li>Help &amp; Support</li><li aria-current="page">Submit a Ticket</li></ol></nav>
+          <span class="pg-hero__eyebrow">Support Ticket</span>
+          <h1 class="pg-hero__title" id="pg-title">Submit A <span>Support Ticket</span></h1>
+          <p class="pg-hero__text">Tell us what is wrong and how urgent it is. The clearer the details, the faster we can help.</p>
+          <div class="pg-hero__actions"><a href="#form" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Open a Ticket</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></a><a href="knowledge-base.html" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Browse Guides</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-bulb"/></svg></span></a></div>
+        </div>
+      </div>
+      <div class="pg-hero__wave" aria-hidden="true">
+        <svg class="pg-hero__wave-back" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+        <svg class="pg-hero__wave-front" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+      </div>
+    </section>
+
+    <!-- ================= Form + side panel ================= -->
+    <section class="sec sp-light sp-dots" id="form" aria-labelledby="form-title">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-7" data-aos="fade-right">
+            <span class="sec__label">Open A Ticket</span>
+            <h2 class="sec__title" id="form-title">Describe Your <span>Issue</span></h2>
+            <p class="sec__lead sp-form__lead">Fill in the form and we will get back to you at the email address you provide.</p>
+            <div class="sp-form__wrap">
+              <form data-form novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="tk-name">Full name <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="tk-name" name="tk-name" type="text" placeholder="Your name" autocomplete="name" data-rule="required min:2"><p class="form-error-custom" id="tk-name-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="tk-email">Email address <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="tk-email" name="tk-email" type="email" placeholder="you@example.com" autocomplete="email" data-rule="required email"><p class="form-error-custom" id="tk-email-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="tk-cat">Category <span class="sp-req" aria-hidden="true">*</span></label><select class="form-select-custom" id="tk-cat" name="tk-cat" data-rule="required"><option value="">Choose a category</option><option>Technical issue</option><option>Billing question</option><option>Project update</option><option>Access or account</option><option>Other</option></select><p class="form-error-custom" id="tk-cat-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="tk-prio">Priority <span class="sp-req" aria-hidden="true">*</span></label><select class="form-select-custom" id="tk-prio" name="tk-prio" data-rule="required"><option value="">Choose a priority</option><option>Critical: service unavailable</option><option>High: major feature affected</option><option>Normal: question or minor issue</option><option>Low: request or idea</option></select><p class="form-error-custom" id="tk-prio-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="tk-subject">Subject <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="tk-subject" name="tk-subject" type="text" placeholder="A short summary of the issue" data-rule="required min:5"><p class="form-error-custom" id="tk-subject-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="tk-desc">Describe the issue <span class="sp-req" aria-hidden="true">*</span></label><textarea class="form-control-custom form-textarea-custom" id="tk-desc" name="tk-desc" placeholder="What happened? What did you expect? When did it start? Any error messages?" data-rule="required min:20"></textarea><p class="form-error-custom" id="tk-desc-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="tk-ref">Related project or web address (optional)</label><input class="form-control-custom" id="tk-ref" name="tk-ref" type="text" placeholder="For example your project name or page address"><p class="form-error-custom" id="tk-ref-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-check-custom"><input type="checkbox" id="tk-consent" name="consent" data-rule="checked"><span>I agree that BrijHub may use my details to reply to this request, as described in the <a href="privacy-policy.html">Privacy Policy</a>.</span></label><p class="form-error-custom" id="tk-consent-err" hidden></p></div>
+                </div>
+                <div class="form-submit-row">
+                  <button type="submit" class="hero__btn hero__btn--solid"><span class="hero__btn-label">Submit Ticket</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></button>
+                  <span class="sp-form__note">Please do not include passwords or card numbers.</span>
+                </div>
+              </form>
+              <div class="form-success-box" data-form-success hidden role="status"><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Thank you, we have received your ticket.</strong><p>Our team will review it and reply by email. Please reply to that email with any screenshots or files.</p></div></div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <aside class="sp-side"><span class="sp-side__orb" aria-hidden="true"></span>
+              
+              <h3>Tips For A Faster Fix</h3>
+              <ul class="sp-side__list"><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Be specific</strong><p>Say what you were doing and what went wrong.</p></div></li><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Add details</strong><p>Include error messages, the page address and the time it happened.</p></div></li><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Send files by email</strong><p>After we reply, attach screenshots to that email.</p></div></li></ul>
+              <p class="sp-side__note">Never share passwords, card numbers or other secrets in a ticket. For an urgent outage, also call <a href="tel:9711101482">9711101482</a>.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="priority" aria-labelledby="priority-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">Priority Guide</span><h2 class="sec__title" id="priority-title">Which Priority <span>Should I Choose?</span></h2><p class="sec__lead">Choosing the right level helps us help the right people first.</p></div>
+        <div class="sp-grid"><article class="sp-card" data-aos="fade-up" data-aos-delay="0"><span class="sp-pill sp-pill--crit">Critical</span><p style="margin-top:14px">Your service is unavailable or there is a serious security concern.</p><strong>Target reply: 30 minutes</strong></article><article class="sp-card" data-aos="fade-up" data-aos-delay="100"><span class="sp-pill sp-pill--high">High</span><p style="margin-top:14px">A major feature is not working, but some work can continue.</p><strong>Target reply: 2 hours</strong></article><article class="sp-card" data-aos="fade-up" data-aos-delay="200"><span class="sp-pill sp-pill--norm">Normal</span><p style="margin-top:14px">A question or a minor problem with a workaround.</p><strong>Target reply: 1 business day</strong></article><article class="sp-card" data-aos="fade-up" data-aos-delay="300"><span class="sp-pill sp-pill--low">Low</span><p style="margin-top:14px">A request, an idea or a general enquiry.</p><strong>Target reply: 2 business days</strong></article></div><p class="sp-small sp-disclaimer">Reply times are targets and depend on your agreement or support plan.</p>
+      </div>
+    </section>
+
+    <section class="sec sp-light" id="next" aria-labelledby="next-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">Our Process</span><h2 class="sec__title" id="next-title">What Happens <span>After You Submit</span></h2></div>
+        <ol class="sp-steps"><li class="sp-step" data-aos="fade-up" data-aos-delay="0"><span class="sp-step__no">1</span><h3>We receive it</h3><p>Your ticket reaches our support team.</p></li><li class="sp-step" data-aos="fade-up" data-aos-delay="100"><span class="sp-step__no">2</span><h3>We confirm</h3><p>We reply to confirm and, if needed, ask for more details.</p></li><li class="sp-step" data-aos="fade-up" data-aos-delay="200"><span class="sp-step__no">3</span><h3>We investigate</h3><p>A specialist works on the issue and keeps you updated.</p></li><li class="sp-step" data-aos="fade-up" data-aos-delay="300"><span class="sp-step__no">4</span><h3>We resolve</h3><p>We confirm the fix with you and close the ticket.</p></li></ol>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="tk-faq" aria-labelledby="tk-faq-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">FAQs</span><h2 class="sec__title" id="tk-faq-title">Ticket <span>Questions</span></h2></div>
+        <div class="row justify-content-center"><div class="col-lg-9" data-aos="fade-up"><div class="faq__list" data-faq>
+              <div class="faq__item is-open">
+                <h3><button type="button" class="faq__q" id="tkq1" aria-expanded="true" aria-controls="tka1"><span>How will you contact me?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="tka1" role="region" aria-labelledby="tkq1"><div><p>We reply to the email address you enter in the form. Please check your spam folder if you do not see our message.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="tkq2" aria-expanded="false" aria-controls="tka2"><span>Can I add a file or screenshot?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="tka2" role="region" aria-labelledby="tkq2"><div><p>Yes. After we reply, attach files to that email. This keeps your files off this public page.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="tkq3" aria-expanded="false" aria-controls="tka3"><span>What if my problem is urgent?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="tka3" role="region" aria-labelledby="tkq3"><div><p>Choose Critical or High, and call us as well. See <a href="customer-support.html">Customer Support</a> for our response targets.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="tkq4" aria-expanded="false" aria-controls="tka4"><span>Is my information safe?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="tka4" role="region" aria-labelledby="tkq4"><div><p>We use your details only to help with your request, as set out in our <a href="privacy-policy.html">Privacy Policy</a>.</p></div></div>
+              </div></div></div></div>
+      </div>
+    </section>
+
+    <section class="sec cta cta--tint" aria-labelledby="cta-title">
+      <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+      <span class="cta__orb cta__orb--1" data-parallax="0.25" aria-hidden="true"></span><span class="cta__orb cta__orb--2" data-parallax="-0.2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="cta__inner" data-aos="zoom-in">
+          <span class="sec__label">Prefer To Talk?</span>
+          <h2 class="sec__title" id="cta-title">Call Our <span>Support Team</span></h2>
+          <p class="sec__lead">For urgent issues, phone is often the fastest way to reach us.</p>
+          <div class="cta__actions"><a href="tel:9711101482" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Call 9711101482</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-phone"/></svg></span></a><a href="customer-support.html" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Support Options</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-headset"/></svg></span></a></div>
+          <p class="sp-cta-note">This page gives general information and is not a contract or a guarantee. Response times are targets. Terms for any project or support plan are set out in your written agreement.</p>
+        </div>
+      </div>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+    </section>
+
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/search-index.js"></script>
+  <script src="assets/js/header-markup.js"></script>
+  <script src="assets/js/footer-markup.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/components.js"></script>
+  <!-- Shared by the six help and support pages -->
+  <script src="assets/js/support.js"></script>
+</body>
+
+</html>

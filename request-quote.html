@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Quote | BrijHub Help &amp; Support</title>
+  <meta name="description" content="Request a free, no-obligation quote from BrijHub for software, mobile, cloud, AI, security or IT support projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Common styles (every page) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Shared by the six help and support pages -->
+  <link rel="stylesheet" href="assets/css/support.css">
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      .pg-hero__inner > * { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div data-include="header"></div>
+
+  <main id="main" class="sp-page sp-page--quote">
+
+    <!-- ================= Banner ================= -->
+    <section class="pg-hero" aria-labelledby="pg-title">
+      <div class="pg-hero__bg" aria-hidden="true"></div>
+      <div class="pg-hero__grid" aria-hidden="true"></div>
+      <span class="pg-hero__orb pg-hero__orb--1" aria-hidden="true"></span><span class="pg-hero__orb pg-hero__orb--2" aria-hidden="true"></span>
+      <span class="pg-hero__ring pg-hero__ring--1" aria-hidden="true"></span><span class="pg-hero__ring pg-hero__ring--2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="pg-hero__inner">
+          <nav aria-label="Breadcrumb"><ol class="pg-hero__crumbs"><li><a href="index.html">Home</a></li><li>Help &amp; Support</li><li aria-current="page">Request a Quote</li></ol></nav>
+          <span class="pg-hero__eyebrow">Request A Quote</span>
+          <h1 class="pg-hero__title" id="pg-title">Get A Free <span>Project Quote</span></h1>
+          <p class="pg-hero__text">Tell us about your project and we will send you a clear written estimate, with no obligation.</p>
+          <div class="pg-hero__actions"><a href="#form" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Start Your Quote</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></a><a href="book-appointment.html" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Book a Call Instead</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-calendar"/></svg></span></a></div>
+        </div>
+      </div>
+      <div class="pg-hero__wave" aria-hidden="true">
+        <svg class="pg-hero__wave-back" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+        <svg class="pg-hero__wave-front" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+      </div>
+    </section>
+
+    <!-- ================= Form + side panel ================= -->
+    <section class="sec sp-light sp-dots" id="form" aria-labelledby="form-title">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-7" data-aos="fade-right">
+            <span class="sec__label">Quote Request</span>
+            <h2 class="sec__title" id="form-title">Tell Us About <span>Your Project</span></h2>
+            <p class="sec__lead sp-form__lead">The more you share, the more accurate our estimate can be. You can always refine it with us later.</p>
+            <div class="sp-form__wrap">
+              <form data-form novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="qt-name">Full name <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="qt-name" name="qt-name" type="text" placeholder="Your name" autocomplete="name" data-rule="required min:2"><p class="form-error-custom" id="qt-name-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="qt-company">Company (optional)</label><input class="form-control-custom" id="qt-company" name="qt-company" type="text" placeholder="Your company" autocomplete="organization"><p class="form-error-custom" id="qt-company-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="qt-email">Email address <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="qt-email" name="qt-email" type="email" placeholder="you@example.com" autocomplete="email" data-rule="required email"><p class="form-error-custom" id="qt-email-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="qt-phone">Phone number</label><input class="form-control-custom" id="qt-phone" name="qt-phone" type="tel" placeholder="+00 000 000 0000" autocomplete="tel" data-rule="phone"><p class="form-error-custom" id="qt-phone-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="qt-service">Service needed <span class="sp-req" aria-hidden="true">*</span></label><select class="form-select-custom" id="qt-service" name="qt-service" data-rule="required"><option value="">Choose a service</option><option>Custom software development</option><option>Mobile app development</option><option>Cloud &amp; DevOps</option><option>AI &amp; data analytics</option><option>Cyber security</option><option>IT support &amp; consulting</option><option>Not sure yet</option></select><p class="form-error-custom" id="qt-service-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="qt-timeline">Desired timeline <span class="sp-req" aria-hidden="true">*</span></label><select class="form-select-custom" id="qt-timeline" name="qt-timeline" data-rule="required"><option value="">Choose a timeline</option><option>As soon as possible</option><option>Within 1 to 3 months</option><option>Within 3 to 6 months</option><option>Flexible</option></select><p class="form-error-custom" id="qt-timeline-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="qt-budget">Budget range (optional)</label><select class="form-select-custom" id="qt-budget" name="qt-budget"><option value="">Prefer to discuss</option><option>Small project</option><option>Medium project</option><option>Large project</option><option>Not sure yet</option></select><p class="form-error-custom" id="qt-budget-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="qt-desc">Tell us about your project <span class="sp-req" aria-hidden="true">*</span></label><textarea class="form-control-custom form-textarea-custom" id="qt-desc" name="qt-desc" placeholder="What do you want to build or improve? Who is it for? Any deadlines or must-have features?" data-rule="required min:30"></textarea><p class="form-error-custom" id="qt-desc-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-check-custom"><input type="checkbox" id="qt-consent" name="consent" data-rule="checked"><span>I agree that BrijHub may use my details to reply to this request, as described in the <a href="privacy-policy.html">Privacy Policy</a>.</span></label><p class="form-error-custom" id="qt-consent-err" hidden></p></div>
+                </div>
+                <div class="form-submit-row">
+                  <button type="submit" class="hero__btn hero__btn--solid"><span class="hero__btn-label">Request My Quote</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></button>
+                  <span class="sp-form__note">Free and with no obligation.</span>
+                </div>
+              </form>
+              <div class="form-success-box" data-form-success hidden role="status"><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Thank you, we have received your request.</strong><p>A BrijHub expert will review it and reply by email with the next steps.</p></div></div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <aside class="sp-side"><span class="sp-side__orb" aria-hidden="true"></span>
+              
+              <h3>What You Will Receive</h3>
+              <ul class="sp-side__list"><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>A personal reply</strong><p>A BrijHub expert reads your request and gets in touch.</p></div></li><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>A written estimate</strong><p>Scope, timeline and price, in plain language.</p></div></li><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>No pressure</strong><p>Take your time to compare and decide.</p></div></li></ul>
+              <p class="sp-side__note">Estimates are not binding until both sides sign a written agreement. Need to talk first? Call <a href="tel:9711101482">9711101482</a>.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="price" aria-labelledby="price-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">Good To Know</span><h2 class="sec__title" id="price-title">What Affects <span>The Price?</span></h2><p class="sec__lead">Every project is unique. These are the main things that shape an estimate.</p></div>
+        <div class="sp-grid"><article class="sp-card" data-aos="fade-up" data-aos-delay="0"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-layers"/></svg></span><h3>Scope &amp; features</h3><p>The number and complexity of the features you need.</p></article><article class="sp-card" data-aos="fade-up" data-aos-delay="100"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-layout"/></svg></span><h3>Design</h3><p>How much custom design and user research the project needs.</p></article><article class="sp-card" data-aos="fade-up" data-aos-delay="200"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-zap"/></svg></span><h3>Integrations</h3><p>Connections to payment, email or other systems.</p></article><article class="sp-card" data-aos="fade-up" data-aos-delay="300"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-calendar"/></svg></span><h3>Timeline</h3><p>Faster delivery may need a larger team.</p></article></div>
+      </div>
+    </section>
+
+    <section class="sec sp-light" id="steps" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">Our Process</span><h2 class="sec__title" id="steps-title">From Request <span>To Proposal</span></h2></div>
+        <ol class="sp-steps sp-steps--3"><li class="sp-step" data-aos="fade-up" data-aos-delay="0"><span class="sp-step__no">1</span><h3>You tell us</h3><p>You send your request using the form.</p></li><li class="sp-step" data-aos="fade-up" data-aos-delay="100"><span class="sp-step__no">2</span><h3>We talk</h3><p>We arrange a short call to understand your goals.</p></li><li class="sp-step" data-aos="fade-up" data-aos-delay="200"><span class="sp-step__no">3</span><h3>You receive a proposal</h3><p>We send a written scope, timeline and price for your approval.</p></li></ol>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="qt-faq" aria-labelledby="qt-faq-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">FAQs</span><h2 class="sec__title" id="qt-faq-title">Quote <span>Questions</span></h2></div>
+        <div class="row justify-content-center"><div class="col-lg-9" data-aos="fade-up"><div class="faq__list" data-faq>
+              <div class="faq__item is-open">
+                <h3><button type="button" class="faq__q" id="qtq1" aria-expanded="true" aria-controls="qta1"><span>Is the quote really free?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="qta1" role="region" aria-labelledby="qtq1"><div><p>Yes. The consultation and the written estimate are free and come with no obligation.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="qtq2" aria-expanded="false" aria-controls="qta2"><span>How long until I get a reply?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="qta2" role="region" aria-labelledby="qtq2"><div><p>We aim to reply within one business day. The full written proposal may take a few days, depending on the project.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="qtq3" aria-expanded="false" aria-controls="qta3"><span>Can the price change later?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="qta3" role="region" aria-labelledby="qtq3"><div><p>The price in a signed agreement stays as agreed. If the scope changes, we send a new quote and start the extra work only after you approve it.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="qtq4" aria-expanded="false" aria-controls="qta4"><span>Do you sign an NDA?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="qta4" role="region" aria-labelledby="qtq4"><div><p>Yes, we are happy to sign an NDA before you share details. Mention it in your message.</p></div></div>
+              </div></div></div></div>
+      </div>
+    </section>
+
+    <section class="sec cta cta--tint" aria-labelledby="cta-title">
+      <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+      <span class="cta__orb cta__orb--1" data-parallax="0.25" aria-hidden="true"></span><span class="cta__orb cta__orb--2" data-parallax="-0.2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="cta__inner" data-aos="zoom-in">
+          <span class="sec__label">Questions First?</span>
+          <h2 class="sec__title" id="cta-title">Talk To An Expert <span>Before You Decide</span></h2>
+          <p class="sec__lead">Book a free call and ask us anything about your project.</p>
+          <div class="cta__actions"><a href="book-appointment.html" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Book a Free Call</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-calendar"/></svg></span></a><a href="tel:9711101482" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Call 9711101482</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-phone"/></svg></span></a></div>
+          <p class="sp-cta-note">This page gives general information and is not a contract or a guarantee. Response times are targets. Terms for any project or support plan are set out in your written agreement.</p>
+        </div>
+      </div>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+    </section>
+
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/search-index.js"></script>
+  <script src="assets/js/header-markup.js"></script>
+  <script src="assets/js/footer-markup.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/components.js"></script>
+  <!-- Shared by the six help and support pages -->
+  <script src="assets/js/support.js"></script>
+</body>
+
+</html>

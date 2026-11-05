@@ -1,0 +1,146 @@
+/* ==========================================================================
+   base.css - global tokens, base typography and shared buttons
+   Source of truth: DESIGN_SYSTEM.md. Loaded on every page BEFORE footer.css.
+   ========================================================================== */
+
+:root {
+  /* Color (secondary / alternate are project-configurable) */
+  --color-primary: #2f5b8a;
+  --color-primary-hover: #244a70;
+  --color-ink: #1B1B1B;               /* dark text / icons on orange backgrounds */
+  --color-secondary: #FF7A00;
+  --color-secondary-hover: #E06A00;
+  --color-alternate: #BFE3FF;
+  --color-white: #FFFFFF;
+  --color-bg: #FAF9F6;
+  --color-bg-light: #F3F2EE;
+  --color-bg-alt: #EAF5FF;
+  --color-border: #E3E1DC;
+  --color-border-strong: #CFCBC3;
+  --color-text: #515151;
+  --color-text-muted: #6B6B6B;
+  --color-focus-ring: rgba(255, 122, 0, .35);
+
+  /* Fonts */
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --fs-h1: 50px; --fs-h2: 42px; --fs-h3: 36px;
+  --fs-h4: 30px; --fs-h5: 24px; --fs-h6: 20px;
+
+  /* Spacing */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 16px; --space-4: 24px;
+  --space-5: 32px; --space-6: 48px; --space-7: 64px; --space-8: 96px;
+  --section-padding: 96px;
+  --grid-gap: 24px;
+
+  /* Radius & shadows */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 50px;
+  --shadow-card: 0 2px 8px rgba(41, 41, 41, .06);
+  --shadow-card-hover: 0 8px 24px rgba(41, 41, 41, .10);
+  --shadow-button: 0 4px 12px rgba(41, 41, 41, .15);
+}
+
+@media (max-width: 991.98px) {
+  :root { --fs-h1: 42px; --fs-h2: 36px; --fs-h3: 30px; --fs-h4: 26px; --fs-h5: 22px; --fs-h6: 18px; --section-padding: 72px; }
+}
+@media (max-width: 575.98px) {
+  :root { --fs-h1: 32px; --fs-h2: 28px; --fs-h3: 24px; --fs-h4: 22px; --fs-h5: 20px; --fs-h6: 18px; --section-padding: 48px; --grid-gap: 16px; }
+}
+
+/* Base */
+body { font-family: var(--font-body); font-size: 16px; line-height: 24px; color: var(--color-text); background: var(--color-bg); overflow-x: hidden; }
+img { max-width: 100%; height: auto; display: block; }
+h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); color: var(--color-primary); text-transform: uppercase; line-height: 1.2; margin: 0 0 var(--space-3); }
+h1 { font-size: var(--fs-h1); font-weight: 700; }
+h2 { font-size: var(--fs-h2); font-weight: 700; }
+h3 { font-size: var(--fs-h3); font-weight: 600; }
+h4 { font-size: var(--fs-h4); font-weight: 600; }
+h5 { font-size: var(--fs-h5); font-weight: 600; }
+h6 { font-size: var(--fs-h6); font-weight: 600; }
+.text-small { font-size: 14px; line-height: 21px; }
+
+/* Buttons (DESIGN_SYSTEM.md section 3) */
+.btn-primary-custom, .btn-secondary-custom, .btn-outline-custom, .btn-light-custom {
+  position: relative; overflow: hidden; isolation: isolate;
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 14px 32px; min-height: 48px;
+  font-family: var(--font-body); font-size: 16px; font-weight: 600; line-height: 1.2;
+  border: 2px solid transparent; border-radius: var(--radius-pill);
+  text-decoration: none; cursor: pointer;
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease, transform .3s ease, box-shadow .3s ease;
+}
+.btn-primary-custom   { background: var(--color-primary);   color: var(--color-white); }
+.btn-secondary-custom { background: var(--color-secondary); color: var(--color-ink); }
+.btn-outline-custom   { background: transparent; color: var(--color-primary); border-color: var(--color-primary); }
+.btn-light-custom     { background: var(--color-white); color: var(--color-primary); border-color: var(--color-border); }
+
+.btn-primary-custom:hover   { background: var(--color-primary-hover); color: var(--color-white); }
+.btn-secondary-custom:hover { background: var(--color-secondary-hover); color: var(--color-ink); }
+.btn-outline-custom:hover   { background: var(--color-primary); color: var(--color-white); }
+.btn-light-custom:hover     { background: var(--color-alternate); border-color: var(--color-alternate); color: var(--color-primary); }
+.btn-primary-custom:hover, .btn-secondary-custom:hover, .btn-outline-custom:hover, .btn-light-custom:hover {
+  transform: translateY(-2px); box-shadow: var(--shadow-button);
+}
+
+/* Continuous white shine: behind the text, never blocks clicks */
+.btn-primary-custom::after, .btn-secondary-custom::after,
+.btn-outline-custom::after, .btn-light-custom::after {
+  content: ""; position: absolute; top: 0; left: -75%; width: 50%; height: 100%; z-index: -1;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, .35), transparent);
+  transform: skewX(-20deg); pointer-events: none;
+  animation: btn-shine 3.5s ease-in-out infinite;
+}
+@keyframes btn-shine { 0%, 60% { left: -75%; } 100% { left: 130%; } }
+
+.btn-primary-custom:focus-visible, .btn-secondary-custom:focus-visible,
+.btn-outline-custom:focus-visible, .btn-light-custom:focus-visible {
+  outline: 3px solid var(--color-secondary); outline-offset: 3px;
+}
+
+@media (max-width: 575.98px) {
+  .btn-primary-custom, .btn-secondary-custom, .btn-outline-custom, .btn-light-custom { padding: 12px 24px; width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  [data-aos] { opacity: 1 !important; transform: none !important; }
+}
+
+/* ==========================================================================
+   Additional tokens + form system (DESIGN_SYSTEM.md section 5)
+   ========================================================================== */
+:root {
+  --color-blue: #0F4C81;
+  --color-blue-dark: #08305A;
+  --color-success: #1E7B4A;
+  --color-error: #C62828;
+  --topbar-h: 44px;                /* updated by header.js */
+}
+
+.form-group-custom { margin-bottom: var(--space-3); }
+.form-label-custom { display: block; margin-bottom: 6px; font-weight: 600; color: var(--color-primary); }
+.form-control-custom, .form-select-custom, .form-textarea-custom {
+  width: 100%; padding: 12px 16px; min-height: 48px;
+  font: 400 16px/24px var(--font-body); color: var(--color-text);
+  background: var(--color-white); border: 1px solid var(--color-border-strong); border-radius: var(--radius-sm);
+  transition: border-color .3s ease, box-shadow .3s ease;
+}
+.form-control-custom::placeholder, .form-textarea-custom::placeholder { color: #767676; opacity: 1; }
+.form-control-custom:focus, .form-select-custom:focus, .form-textarea-custom:focus {
+  outline: none; border-color: var(--color-primary); box-shadow: 0 0 0 3px var(--color-focus-ring);
+}
+.form-control-custom.is-valid-custom { border-color: var(--color-success); }
+.form-control-custom.is-invalid-custom { border-color: var(--color-error); }
+.form-error-custom { margin: 4px 0 0; font-size: 14px; line-height: 21px; color: var(--color-error); }
+.form-check-custom { display: flex; align-items: flex-start; gap: 10px; }
+.form-check-custom input { flex: 0 0 20px; width: 20px; height: 20px; margin-top: 2px; accent-color: var(--color-secondary); }
+.form-check-custom input:focus-visible { outline: 3px solid var(--color-secondary); outline-offset: 2px; }
+
+/* Brand palette from CLAUDE.md (section 2). Existing --color-primary is unchanged until you confirm switching it. */
+:root {
+  --color-brand: #2f5b8a;
+  --color-black: #000000;
+}

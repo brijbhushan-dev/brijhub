@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog | BrijHub Insights on Software, Cloud, AI and Security</title>
+  <meta name="description" content="Read practical articles from BrijHub experts on software development, cloud, AI, cyber security and design. Search by topic and subscribe to our newsletter.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Common styles (every page) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- This page only -->
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      .pg-hero__inner > * { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div data-include="header"></div>
+
+  <main id="main">
+
+    <!-- ================= 1. Banner with search ================= -->
+    <section class="pg-hero" aria-labelledby="pg-title">
+      <div class="pg-hero__bg" aria-hidden="true"></div>
+      <div class="pg-hero__grid" aria-hidden="true"></div>
+      <span class="pg-hero__orb pg-hero__orb--1" aria-hidden="true"></span><span class="pg-hero__orb pg-hero__orb--2" aria-hidden="true"></span>
+      <span class="pg-hero__ring pg-hero__ring--1" aria-hidden="true"></span><span class="pg-hero__ring pg-hero__ring--2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="pg-hero__inner">
+          <nav aria-label="Breadcrumb"><ol class="pg-hero__crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Blog</li></ol></nav>
+          <span class="pg-hero__eyebrow">The BrijHub Blog</span>
+          <h1 class="pg-hero__title" id="pg-title">Ideas, Insights &amp; <span>Stories</span></h1>
+          <p class="pg-hero__text">Practical advice on software, cloud, AI and security, written by the people who build it every day.</p>
+          <label class="pg-search" for="blogSearch">
+            <svg class="ix" aria-hidden="true"><use href="#ix-search"/></svg>
+            <input id="blogSearch" type="search" placeholder="Search articles, e.g. cloud, security, mobile..." autocomplete="off" spellcheck="false">
+          </label>
+        </div>
+      </div>
+      <div class="pg-hero__wave" aria-hidden="true">
+        <svg class="pg-hero__wave-back" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+        <svg class="pg-hero__wave-front" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+      </div>
+    </section>
+
+    <!-- ================= 2. Featured article ================= -->
+    <section class="sec bl-featured" id="featured" aria-labelledby="feat-title">
+      <div class="container">
+        <div class="sec__head sec__head--left" data-aos="fade-up">
+          <span class="sec__label">Featured Story</span>
+          <h2 class="sec__title" id="feat-title">Editor's <span>Pick</span></h2>
+        </div>
+        <article class="bl-feature" data-aos="fade-up">
+          <a class="bl-feature__img" href="blog-details.html" aria-label="Read the featured article">
+            <img data-parallax="0.04" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=75" alt="Rows of servers in a modern data center" width="1200" height="900" loading="lazy" decoding="async">
+            <span class="bl-feature__badge">Featured</span>
+          </a>
+          <div class="bl-feature__body">
+            <ul class="bl-meta"><li class="bl-tag">Cloud</li><li>Oct 28, 2026</li><li>8 min read</li></ul>
+            <h3 class="bl-feature__title"><a href="blog-details.html">How Cloud-Native Architecture Can Help Control Costs</a></h3>
+            <p>Moving to the cloud is not enough. We look at the five architecture decisions that made the biggest difference to performance and monthly bills in most cloud projects.</p>
+            <div class="bl-feature__foot">
+              <div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="Brij Pant" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>Brij Pant</strong><small>Founder &amp; CEO</small></span></div>
+              <a href="blog-details.html" class="hero__btn hero__btn--solid"><span class="hero__btn-label">Read Article</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-arrow"/></svg></span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= 3. All articles ================= -->
+    <section class="sec bl-all" id="articles" aria-labelledby="all-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up">
+          <span class="sec__label">Latest Articles</span>
+          <h2 class="sec__title" id="all-title">Fresh Reading <span>For Curious Minds</span></h2>
+        </div>
+
+        <ul class="chips" aria-label="Filter articles by topic" data-aos="fade-up">
+          <li><button type="button" class="chip" data-cat="all" aria-pressed="true">All <small>9</small></button></li>
+          <li><button type="button" class="chip" data-cat="software" aria-pressed="false">Software <small>2</small></button></li>
+          <li><button type="button" class="chip" data-cat="cloud" aria-pressed="false">Cloud <small>1</small></button></li>
+          <li><button type="button" class="chip" data-cat="ai" aria-pressed="false">AI &amp; Data <small>2</small></button></li>
+          <li><button type="button" class="chip" data-cat="security" aria-pressed="false">Security <small>2</small></button></li>
+          <li><button type="button" class="chip" data-cat="design" aria-pressed="false">Design <small>1</small></button></li>
+          <li><button type="button" class="chip" data-cat="company" aria-pressed="false">Company <small>1</small></button></li>
+        </ul>
+        <p class="bl-count" data-bl-count role="status" aria-live="polite">Showing 6 of 9 articles</p>
+
+        <div class="bl-grid" data-bl-grid>
+          <article class="bl-card" data-cat="software" data-tags="agile react teams" data-aos="fade-up" data-aos-delay="0">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=75" alt="Developers writing code on a laptop screen" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">Software</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Oct 22, 2026</li><li>6 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">10 Habits of High-Performing Development Teams</a></h3>
+              <p>From small pull requests to honest retrospectives, these are the everyday habits we see in the teams that ship fast and sleep well.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="BrijHub Team" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>BrijHub Team</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: 10 Habits of High-Performing Development Teams"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="bl-card" data-cat="ai" data-tags="ai data startups" data-aos="fade-up" data-aos-delay="100">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=75" alt="Close-up of a glowing circuit board" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">AI &amp; Data</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Oct 15, 2026</li><li>7 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">Practical AI: Where Small Businesses Should Start</a></h3>
+              <p>You do not need a data science team to benefit from AI. Here are four low-risk projects that pay back within a quarter.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="BrijHub Team" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>BrijHub Team</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: Practical AI: Where Small Businesses Should Start"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="bl-card" data-cat="security" data-tags="security cloud" data-aos="fade-up" data-aos-delay="200">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=75" alt="A digital padlock over a laptop keyboard" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">Security</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Oct 9, 2026</li><li>5 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">Zero Trust Security Explained in Plain English</a></h3>
+              <p>Never trust, always verify. What zero trust really means, and the three changes you can make this month to adopt it.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="BrijHub Team" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>BrijHub Team</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: Zero Trust Security Explained in Plain English"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="bl-card" data-cat="design" data-tags="ux design startups" data-aos="fade-up" data-aos-delay="0">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=75" alt="Designers reviewing user research notes together" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">Design</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Oct 2, 2026</li><li>6 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">Why UX Research Pays for Itself</a></h3>
+              <p>A week of research can save months of rework. We share our lightweight research toolkit and how it changed one client&#39;s conversion rate.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="BrijHub Team" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>BrijHub Team</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: Why UX Research Pays for Itself"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="bl-card" data-cat="company" data-tags="agile teams" data-aos="fade-up" data-aos-delay="100">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=800&q=75" alt="A team meeting around a table with laptops" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">Company</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Sep 26, 2026</li><li>4 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">Inside BrijHub: How We Run Two-Week Sprints</a></h3>
+              <p>A behind-the-scenes look at planning, demos and retrospectives, and why our clients rarely get a surprise.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="Brij Pant" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>Brij Pant</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: Inside BrijHub: How We Run Two-Week Sprints"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="bl-card" data-cat="cloud" data-tags="cloud devops" data-aos="fade-up" data-aos-delay="200">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=75" alt="Earth at night with glowing network connections" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">Cloud</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Sep 18, 2026</li><li>9 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">Kubernetes or Serverless? A Simple Decision Guide</a></h3>
+              <p>Two powerful options, one honest question: what does your workload actually look like? Use our flowchart to decide.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="BrijHub Team" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>BrijHub Team</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: Kubernetes or Serverless? A Simple Decision Guide"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="bl-card" data-cat="software" data-tags="mobile ux" data-aos="fade-up" data-aos-delay="0">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=75" alt="A smartphone showing a mobile app interface" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">Software</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Sep 11, 2026</li><li>6 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">Building Mobile Apps People Actually Keep</a></h3>
+              <p>Downloads are easy, retention is hard. The onboarding, performance and notification choices that keep users coming back.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="BrijHub Team" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>BrijHub Team</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: Building Mobile Apps People Actually Keep"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="bl-card" data-cat="ai" data-tags="data ai" data-aos="fade-up" data-aos-delay="100">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=75" alt="Charts and graphs on a data dashboard" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">AI &amp; Data</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Sep 4, 2026</li><li>5 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">Dashboards That Drive Decisions, Not Confusion</a></h3>
+              <p>More charts rarely mean more insight. Five rules for building dashboards your team will actually open every morning.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="BrijHub Team" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>BrijHub Team</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: Dashboards That Drive Decisions, Not Confusion"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+          <article class="bl-card" data-cat="security" data-tags="security startups" data-aos="fade-up" data-aos-delay="200">
+            <a class="bl-card__img" href="blog-details.html" tabindex="-1" aria-hidden="true"><img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=75" alt="A secure lock icon on a blue digital background" width="800" height="500" loading="lazy" decoding="async"><span class="bl-card__cat">Security</span></a>
+            <div class="bl-card__body">
+              <ul class="bl-meta"><li>Aug 28, 2026</li><li>5 min read</li></ul>
+              <h3 class="bl-card__title"><a href="blog-details.html">A 7-Point Security Checklist Before You Launch</a></h3>
+              <p>Run through this short list before going live and avoid the most common, and most expensive, launch-day mistakes.</p>
+              <div class="bl-card__foot"><div class="bl-author"><span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub2.jpg" alt="BrijHub Team" width="960" height="1192" loading="lazy" decoding="async"></span><span><strong>BrijHub Team</strong></span></div><a class="bl-card__more" href="blog-details.html" aria-label="Read: A 7-Point Security Checklist Before You Launch"><svg class="ix"><use href="#ix-arrow"/></svg></a></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="bl-empty" data-bl-empty hidden>
+          <strong>No articles found</strong>
+          <p>Try another word or topic.</p>
+        </div>
+        <div class="bl-more"><button type="button" class="hero__btn hero__btn--solid" data-bl-more><span class="hero__btn-label">Load More Articles</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-arrow"/></svg></span></button></div>
+      </div>
+    </section>
+
+    <!-- ================= 4. Trending + topics ================= -->
+    <section class="sec bl-trend" id="trending" aria-labelledby="trend-title">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-7" data-aos="fade-right">
+            <span class="sec__label">Start Here</span>
+            <h2 class="sec__title" id="trend-title">Most Read <span>This Month</span></h2>
+            <ol class="bl-top">
+              <li><a href="blog-details.html"><span class="bl-top__no">1</span><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=200&h=200&q=70" alt="" width="84" height="84" loading="lazy"><span class="bl-top__text"><strong>Zero Trust Security Explained in Plain English</strong><small>Security &middot; 12.4k reads</small></span></a></li>
+              <li><a href="blog-details.html"><span class="bl-top__no">2</span><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=200&h=200&q=70" alt="" width="84" height="84" loading="lazy"><span class="bl-top__text"><strong>Practical AI: Where Small Businesses Should Start</strong><small>AI &amp; Data &middot; 10.8k reads</small></span></a></li>
+              <li><a href="blog-details.html"><span class="bl-top__no">3</span><img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=200&h=200&q=70" alt="" width="84" height="84" loading="lazy"><span class="bl-top__text"><strong>10 Habits of High-Performing Development Teams</strong><small>Software &middot; 9.1k reads</small></span></a></li>
+              <li><a href="blog-details.html"><span class="bl-top__no">4</span><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=200&h=200&q=70" alt="" width="84" height="84" loading="lazy"><span class="bl-top__text"><strong>Kubernetes or Serverless? A Simple Decision Guide</strong><small>Cloud &middot; 7.6k reads</small></span></a></li>
+              <li><a href="blog-details.html"><span class="bl-top__no">5</span><img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=200&h=200&q=70" alt="" width="84" height="84" loading="lazy"><span class="bl-top__text"><strong>Building Mobile Apps People Actually Keep</strong><small>Software &middot; 6.9k reads</small></span></a></li>
+            </ol>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <aside class="bl-topics">
+              <span class="bl-topics__orb" aria-hidden="true"></span>
+              <h3>Explore Topics</h3>
+              <p>Tap a tag to search the articles.</p>
+              <div class="bl-tags">
+                <button type="button" data-bl-tag="cloud">Cloud</button><button type="button" data-bl-tag="devops">DevOps</button><button type="button" data-bl-tag="ai">AI</button>
+                <button type="button" data-bl-tag="security">Security</button><button type="button" data-bl-tag="ux">UX</button><button type="button" data-bl-tag="mobile">Mobile</button>
+                <button type="button" data-bl-tag="agile">Agile</button><button type="button" data-bl-tag="data">Data</button><button type="button" data-bl-tag="startups">Startups</button><button type="button" data-bl-tag="react">React</button>
+              </div>
+              <div class="bl-topics__author">
+                <span class="bl-author__img bl-author__img--brij"><img src="assets/images/brijhub1.jpg" alt="Brij Pant" width="960" height="1192" loading="lazy" decoding="async"></span>
+                <p>"We write what we wish someone had told us when we started."<strong>Brij Pant</strong></p>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. Newsletter (fixed background) ================= -->
+    <section class="sec cta cta--blog" id="newsletter" aria-labelledby="news-title">
+      <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+      <span class="cta__orb cta__orb--1" data-parallax="0.25" aria-hidden="true"></span><span class="cta__orb cta__orb--2" data-parallax="-0.2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="cta__inner" data-aos="zoom-in">
+          <span class="sec__label">Stay In The Loop</span>
+          <h2 class="sec__title" id="news-title">Get One Great Idea <span>Every Week</span></h2>
+          <p class="sec__lead">Get our best articles and tips by email. No spam, unsubscribe any time.</p>
+          <div class="bl-news">
+            <form class="bl-news__form" data-form novalidate>
+              <div class="bl-news__field">
+                <label class="visually-hidden" for="news-email">Email address</label>
+                <input class="form-control-custom" id="news-email" name="email" type="email" placeholder="Enter your email address" autocomplete="email" data-rule="required email">
+                <button type="submit" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Subscribe</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-arrow"/></svg></span></button>
+              </div>
+              <p class="form-error-custom bl-news__err" id="news-email-err" hidden></p>
+            </form>
+            <div class="form-success-box bl-news__ok" data-form-success hidden role="status">
+              <svg class="ix"><use href="#ix-check"/></svg>
+              <div><strong>You are subscribed!</strong><p>Watch your inbox for our next article.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+    </section>
+
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/search-index.js"></script>
+  <script src="assets/js/header-markup.js"></script>
+  <script src="assets/js/footer-markup.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/components.js"></script>
+  <!-- This page only -->
+  <script src="assets/js/blog.js"></script>
+</body>
+
+</html>

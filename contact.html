@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | Talk to the BrijHub Team</title>
+  <meta name="description" content="Contact BrijHub for software, cloud, AI and security projects. Call, email or send a message and get a reply within one business day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Common styles (every page) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- This page only -->
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      .pg-hero__inner > * { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div data-include="header"></div>
+
+  <main id="main">
+
+    <!-- ================= 1. Banner ================= -->
+    <section class="pg-hero" aria-labelledby="pg-title">
+      <div class="pg-hero__bg" aria-hidden="true"></div>
+      <div class="pg-hero__grid" aria-hidden="true"></div>
+      <span class="pg-hero__orb pg-hero__orb--1" aria-hidden="true"></span><span class="pg-hero__orb pg-hero__orb--2" aria-hidden="true"></span>
+      <span class="pg-hero__ring pg-hero__ring--1" aria-hidden="true"></span><span class="pg-hero__ring pg-hero__ring--2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="pg-hero__inner">
+          <nav aria-label="Breadcrumb"><ol class="pg-hero__crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Contact Us</li></ol></nav>
+          <span class="pg-hero__eyebrow">Get In Touch</span>
+          <h1 class="pg-hero__title" id="pg-title">Let's Start a <span>Conversation</span></h1>
+          <p class="pg-hero__text">Have a project, a question or just an idea? We aim to reply within one business day to arrange a free consultation.</p>
+          <div class="pg-hero__actions">
+            <a href="tel:9711101482" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Call 9711101482</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-phone"/></svg></span></a>
+            <a href="#contact-form" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Send a Message</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-arrow"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="pg-hero__wave" aria-hidden="true">
+        <svg class="pg-hero__wave-back" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+        <svg class="pg-hero__wave-front" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+      </div>
+    </section>
+
+    <!-- ================= 2. Contact cards ================= -->
+    <section class="ct-cards" aria-label="Ways to reach us">
+      <div class="container">
+        <div class="ct-cards__grid">
+          <a class="ct-card" href="tel:9711101482" data-aos="fade-up">
+            <span class="ct-card__icon"><svg class="ix"><use href="#ix-phone"/></svg></span>
+            <h2>Call Us</h2><p>Mon to Sat, 9:30 AM to 6:30 PM</p><strong>9711101482</strong>
+          </a>
+          <a class="ct-card" href="mailto:brijpant88@gmail.com" data-aos="fade-up" data-aos-delay="100">
+            <span class="ct-card__icon"><svg class="ix"><use href="#ix-mail"/></svg></span>
+            <h2>Email Us</h2><p>We aim to reply within one business day</p><strong>brijpant88@gmail.com</strong>
+          </a>
+          <div class="ct-card" data-aos="fade-up" data-aos-delay="200">
+            <span class="ct-card__icon"><svg class="ix"><use href="#ix-pin"/></svg></span>
+            <h2>Meet Us</h2><p>Online or in person</p><strong>By appointment</strong>
+          </div>
+          <div class="ct-card" data-aos="fade-up" data-aos-delay="300">
+            <span class="ct-card__icon"><svg class="ix"><use href="#ix-calendar"/></svg></span>
+            <h2>Working Hours</h2><p>Monday to Saturday</p><strong>9:30 AM - 6:30 PM</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. Form + side panel ================= -->
+    <section class="sec ct-form" id="contact-form" aria-labelledby="form-title">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-7" data-aos="fade-right">
+            <span class="sec__label">Send A Message</span>
+            <h2 class="sec__title" id="form-title">Tell Us About Your <span>Project</span></h2>
+            <p class="sec__lead ct-form__lead">Fill in the form and a BrijHub expert will get back to you with ideas, a timeline and a clear estimate.</p>
+            <div class="ct-form__wrap">
+              <form data-form novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6 form-group-custom">
+                    <label class="form-label-custom" for="cf-name">Full name *</label>
+                    <input class="form-control-custom" id="cf-name" name="name" type="text" placeholder="Your name" autocomplete="name" data-rule="required min:2">
+                    <p class="form-error-custom" id="cf-name-err" hidden></p>
+                  </div>
+                  <div class="col-md-6 form-group-custom">
+                    <label class="form-label-custom" for="cf-email">Email address *</label>
+                    <input class="form-control-custom" id="cf-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" data-rule="required email">
+                    <p class="form-error-custom" id="cf-email-err" hidden></p>
+                  </div>
+                  <div class="col-md-6 form-group-custom">
+                    <label class="form-label-custom" for="cf-phone">Phone number</label>
+                    <input class="form-control-custom" id="cf-phone" name="phone" type="tel" placeholder="+00 000 000 0000" autocomplete="tel" data-rule="phone">
+                    <p class="form-error-custom" id="cf-phone-err" hidden></p>
+                  </div>
+                  <div class="col-md-6 form-group-custom">
+                    <label class="form-label-custom" for="cf-service">I am interested in *</label>
+                    <select class="form-select-custom" id="cf-service" name="service" data-rule="required">
+                      <option value="">Choose a service</option>
+                      <option>Custom Software Development</option>
+                      <option>Mobile App Development</option>
+                      <option>Cloud &amp; DevOps</option>
+                      <option>AI &amp; Data Analytics</option>
+                      <option>Cyber Security</option>
+                      <option>IT Support &amp; Consulting</option>
+                      <option>Something else</option>
+                    </select>
+                    <p class="form-error-custom" id="cf-service-err" hidden></p>
+                  </div>
+                  <div class="col-12 form-group-custom">
+                    <label class="form-label-custom" for="cf-message">Your message *</label>
+                    <textarea class="form-control-custom form-textarea-custom" id="cf-message" name="message" placeholder="Tell us what you want to build, your timeline and budget range..." data-rule="required min:15"></textarea>
+                    <p class="form-error-custom" id="cf-message-err" hidden></p>
+                  </div>
+                  <div class="col-12 form-group-custom">
+                    <label class="form-check-custom"><input type="checkbox" id="cf-consent" name="consent" data-rule="checked"><span>I agree to be contacted about my enquiry and accept the <a href="privacy-policy.html">Privacy Policy</a>.</span></label>
+                    <p class="form-error-custom" id="cf-consent-err" hidden></p>
+                  </div>
+                </div>
+                <div class="form-submit-row">
+                  <button type="submit" class="hero__btn hero__btn--solid"><span class="hero__btn-label">Send Message</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-arrow"/></svg></span></button>
+                  <span class="ct-form__note">We never share your details.</span>
+                </div>
+              </form>
+              <div class="form-success-box" data-form-success hidden role="status">
+                <svg class="ix"><use href="#ix-check"/></svg>
+                <div><strong>Thank you, your message is on its way!</strong><p>We aim to reply within one business day.</p></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5" data-aos="fade-left">
+            <aside class="ct-side">
+              <span class="ct-side__orb" aria-hidden="true"></span>
+              <div class="ct-side__person">
+                <img src="assets/images/brijhub3.jpg" alt="Brij Pant, founder of BrijHub" width="960" height="1192" loading="lazy" decoding="async">
+                <span><strong>Brij Pant</strong><small>Founder &amp; CEO</small></span>
+              </div>
+              <h3>What happens next?</h3>
+              <ol class="ct-steps">
+                <li><span>1</span><div><strong>We read your message</strong><p>Our team reads and reviews it carefully.</p></div></li>
+                <li><span>2</span><div><strong>Free discovery call</strong><p>We arrange a call to understand your goals.</p></div></li>
+                <li><span>3</span><div><strong>Clear proposal</strong><p>You receive scope, timeline and price in writing.</p></div></li>
+              </ol>
+              <ul class="ct-side__social" aria-label="Social media">
+                <li><a href="#" aria-label="Facebook"><svg class="ix"><use href="#i-facebook"/></svg></a></li>
+                <li><a href="#" aria-label="Twitter"><svg class="ix"><use href="#ix-twitter"/></svg></a></li>
+                <li><a href="https://www.linkedin.com/in/brij-bhushan-pant-ba8000a4/" aria-label="LinkedIn" target="_blank" rel="noopener"><svg class="ix"><use href="#ix-linkedin"/></svg></a></li>
+                <li><a href="#" aria-label="YouTube"><svg class="ix"><use href="#i-youtube"/></svg></a></li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. Offices and map ================= -->
+    <section class="sec ct-offices" id="offices" aria-labelledby="off-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up">
+          <span class="sec__label">Our Offices</span>
+          <h2 class="sec__title" id="off-title">Ways To <span>Meet And Talk</span></h2>
+          <p class="sec__lead">Pick the way that suits you best. Write to us and we will arrange a time.</p>
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="ct-map" aria-hidden="true">
+              <span class="ct-map__pin ct-map__pin--1" data-pin="1"><i></i></span>
+              <span class="ct-map__pin ct-map__pin--2" data-pin="2"><i></i></span>
+              <span class="ct-map__pin ct-map__pin--3" data-pin="3"><i></i></span>
+              <svg class="ct-map__lines" viewBox="0 0 400 300" preserveAspectRatio="none"><path d="M90 180 C150 90 230 90 300 130 S330 220 260 235" /></svg>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <ul class="ct-office-list">
+              <li class="ct-office" data-office="1"><span class="ct-office__no">1</span><div><h3>Phone Call</h3><p>Talk to us during working hours, Monday to Saturday</p><a href="tel:9711101482">9711101482</a></div></li>
+              <li class="ct-office" data-office="2"><span class="ct-office__no">2</span><div><h3>Email &amp; Video Call</h3><p>Send us a message and we will arrange a video meeting</p><a href="mailto:brijpant88@gmail.com">brijpant88@gmail.com</a></div></li>
+              <li class="ct-office" data-office="3"><span class="ct-office__no">3</span><div><h3>Help Center</h3><p>Guides and answers you can read any time</p><a href="help.html">Visit the Help Center</a></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. Quick FAQ + CTA ================= -->
+    <section class="sec ct-faq" id="quick-faq" aria-labelledby="qfaq-title">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <span class="sec__label">Quick Answers</span>
+            <h2 class="sec__title" id="qfaq-title">Before You <span>Write To Us</span></h2>
+            <p class="sec__lead">Most questions are answered in seconds. If yours is not here, we are always happy to talk.</p>
+            <a href="faqs.html" class="hero__btn hero__btn--solid ct-faq__btn"><span class="hero__btn-label">See All FAQs</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-arrow"/></svg></span></a>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="faq__list" data-faq>
+              <div class="faq__item is-open">
+                <h3><button type="button" class="faq__q" id="cq1" aria-expanded="true" aria-controls="ca1"><span>How fast will you reply?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="ca1" role="region" aria-labelledby="cq1"><div><p>We aim to answer every enquiry within one business day.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="cq2" aria-expanded="false" aria-controls="ca2"><span>Is the first consultation really free?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="ca2" role="region" aria-labelledby="cq2"><div><p>Yes. The 30-minute discovery call and the written proposal are free, with no obligation to continue.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="cq3" aria-expanded="false" aria-controls="ca3"><span>Can I meet the team in person?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="ca3" role="region" aria-labelledby="cq3"><div><p>Of course. You are welcome to meet us by appointment, or we can meet over a video call at a time that suits you.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="cq4" aria-expanded="false" aria-controls="ca4"><span>Do you sign an NDA?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="ca4" role="region" aria-labelledby="cq4"><div><p>Yes. We are happy to sign your NDA before you share any details about your idea.</p></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec cta cta--contact" aria-labelledby="cta-title">
+      <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+      <span class="cta__orb cta__orb--1" data-parallax="0.25" aria-hidden="true"></span><span class="cta__orb cta__orb--2" data-parallax="-0.2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="cta__inner" data-aos="zoom-in">
+          <span class="sec__label">Prefer To Talk?</span>
+          <h2 class="sec__title" id="cta-title">Speak To An Expert <span>Right Now</span></h2>
+          <p class="sec__lead">Skip the form. Call us and we will understand your idea in minutes.</p>
+          <div class="cta__actions">
+            <a href="tel:9711101482" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Call 9711101482</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-phone"/></svg></span></a>
+            <a href="mailto:brijpant88@gmail.com" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Email Us</span><span class="hero__btn-icon"><svg class="ix"><use href="#ix-mail"/></svg></span></a>
+          </div>
+        </div>
+      </div>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+    </section>
+
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/search-index.js"></script>
+  <script src="assets/js/header-markup.js"></script>
+  <script src="assets/js/footer-markup.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/components.js"></script>
+  <!-- This page only -->
+  <script src="assets/js/contact.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Feedback &amp; Complaints | BrijHub Help &amp; Support</title>
+  <meta name="description" content="Share feedback, suggestions or a complaint with BrijHub. Learn how we handle complaints and what you can expect.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Common styles (every page) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Shared by the six help and support pages -->
+  <link rel="stylesheet" href="assets/css/support.css">
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      .pg-hero__inner > * { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div data-include="header"></div>
+
+  <main id="main" class="sp-page sp-page--feedback">
+
+    <!-- ================= Banner ================= -->
+    <section class="pg-hero" aria-labelledby="pg-title">
+      <div class="pg-hero__bg" aria-hidden="true"></div>
+      <div class="pg-hero__grid" aria-hidden="true"></div>
+      <span class="pg-hero__orb pg-hero__orb--1" aria-hidden="true"></span><span class="pg-hero__orb pg-hero__orb--2" aria-hidden="true"></span>
+      <span class="pg-hero__ring pg-hero__ring--1" aria-hidden="true"></span><span class="pg-hero__ring pg-hero__ring--2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="pg-hero__inner">
+          <nav aria-label="Breadcrumb"><ol class="pg-hero__crumbs"><li><a href="index.html">Home</a></li><li>Help &amp; Support</li><li aria-current="page">Feedback &amp; Complaints</li></ol></nav>
+          <span class="pg-hero__eyebrow">Feedback &amp;amp; Complaints</span>
+          <h1 class="pg-hero__title" id="pg-title">Your Voice <span>Makes Us Better</span></h1>
+          <p class="pg-hero__text">Share a compliment, a suggestion or a concern. We read every message and take it seriously.</p>
+          <div class="pg-hero__actions"><a href="#form" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Share Feedback</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></a><a href="tel:9711101482" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Call 9711101482</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-phone"/></svg></span></a></div>
+        </div>
+      </div>
+      <div class="pg-hero__wave" aria-hidden="true">
+        <svg class="pg-hero__wave-back" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+        <svg class="pg-hero__wave-front" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+      </div>
+    </section>
+
+    <!-- ================= Form + side panel ================= -->
+    <section class="sec sp-light sp-dots" id="form" aria-labelledby="form-title">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-7" data-aos="fade-right">
+            <span class="sec__label">Tell Us</span>
+            <h2 class="sec__title" id="form-title">We Would Love <span>To Hear From You</span></h2>
+            <p class="sec__lead sp-form__lead">Honest feedback helps us improve. Complaints are reviewed by a senior member of our team.</p>
+            <div class="sp-form__wrap">
+              <form data-form novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="fb-type">What would you like to share? <span class="sp-req" aria-hidden="true">*</span></label><select class="form-select-custom" id="fb-type" name="fb-type" data-rule="required"><option value="">Choose a type</option><option>Compliment</option><option>Suggestion</option><option>Complaint</option><option>Other</option></select><p class="form-error-custom" id="fb-type-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="fb-subject">Subject <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="fb-subject" name="fb-subject" type="text" placeholder="A short summary" data-rule="required min:5"><p class="form-error-custom" id="fb-subject-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="fb-rating">How was your experience? (optional)</label><div class="sp-stars" role="group" aria-label="Rating out of 5" data-stars="fb-rating"><button type="button" class="sp-star" data-star="1" aria-label="1 star" aria-pressed="false"><svg class="ix" aria-hidden="true"><use href="#ix-star"/></svg></button><button type="button" class="sp-star" data-star="2" aria-label="2 stars" aria-pressed="false"><svg class="ix" aria-hidden="true"><use href="#ix-star"/></svg></button><button type="button" class="sp-star" data-star="3" aria-label="3 stars" aria-pressed="false"><svg class="ix" aria-hidden="true"><use href="#ix-star"/></svg></button><button type="button" class="sp-star" data-star="4" aria-label="4 stars" aria-pressed="false"><svg class="ix" aria-hidden="true"><use href="#ix-star"/></svg></button><button type="button" class="sp-star" data-star="5" aria-label="5 stars" aria-pressed="false"><svg class="ix" aria-hidden="true"><use href="#ix-star"/></svg></button></div><input type="hidden" id="fb-rating" name="fb-rating"><p class="form-error-custom" id="fb-rating-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="fb-message">Your message <span class="sp-req" aria-hidden="true">*</span></label><textarea class="form-control-custom form-textarea-custom" id="fb-message" name="fb-message" placeholder="Please tell us what happened and, if you are raising a concern, what outcome you would like." data-rule="required min:20"></textarea><p class="form-error-custom" id="fb-message-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="fb-name">Your name <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="fb-name" name="fb-name" type="text" placeholder="Your name" autocomplete="name" data-rule="required min:2"><p class="form-error-custom" id="fb-name-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="fb-email">Email address <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="fb-email" name="fb-email" type="email" placeholder="you@example.com" autocomplete="email" data-rule="required email"><p class="form-error-custom" id="fb-email-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-check-custom"><input type="checkbox" id="fb-consent" name="consent" data-rule="checked"><span>I agree that BrijHub may use my details to reply to this request, as described in the <a href="privacy-policy.html">Privacy Policy</a>.</span></label><p class="form-error-custom" id="fb-consent-err" hidden></p></div>
+                </div>
+                <div class="form-submit-row">
+                  <button type="submit" class="hero__btn hero__btn--solid"><span class="hero__btn-label">Send Feedback</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></button>
+                  <span class="sp-form__note">Please do not include passwords or card numbers.</span>
+                </div>
+              </form>
+              <div class="form-success-box" data-form-success hidden role="status"><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Thank you, we have received your message.</strong><p>We read everything. If you raised a concern, we will reply by email as described below.</p></div></div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <aside class="sp-side"><span class="sp-side__orb" aria-hidden="true"></span>
+              <div class="sp-side__person"><img src="assets/images/brijhub3.jpg" alt="Brij Pant, Founder &amp;amp; CEO at BrijHub" width="960" height="1192" loading="lazy" decoding="async"><span><strong>Brij Pant</strong><small>Founder &amp; CEO</small></span></div>
+              <h3>Our Promise To You</h3>
+              <ul class="sp-side__list"><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>We listen</strong><p>Every message is read by a real person.</p></div></li><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>We respond</strong><p>We acknowledge complaints within 2 business days.</p></div></li><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>We learn</strong><p>We use what you tell us to improve how we work.</p></div></li></ul>
+              <p class="sp-side__note">Raising a complaint will never affect the quality of service you receive from us.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">Our Process</span><h2 class="sec__title" id="process-title">How We Handle <span>Complaints</span></h2><p class="sec__lead">A fair, simple process so you always know what happens next.</p></div>
+        <ol class="sp-steps"><li class="sp-step" data-aos="fade-up" data-aos-delay="0"><span class="sp-step__no">1</span><h3>You tell us</h3><p>Send your complaint using the form, by email or by phone.</p></li><li class="sp-step" data-aos="fade-up" data-aos-delay="100"><span class="sp-step__no">2</span><h3>We acknowledge</h3><p>We confirm receipt, normally within 2 business days.</p></li><li class="sp-step" data-aos="fade-up" data-aos-delay="200"><span class="sp-step__no">3</span><h3>We investigate</h3><p>A senior manager who was not involved reviews the facts.</p></li><li class="sp-step" data-aos="fade-up" data-aos-delay="300"><span class="sp-step__no">4</span><h3>We respond</h3><p>We explain our findings and any action we will take.</p></li></ol>
+      </div>
+    </section>
+
+    <section class="sec sp-light" id="values" aria-labelledby="values-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">Our Commitments</span><h2 class="sec__title" id="values-title">What You Can <span>Expect From Us</span></h2></div>
+        <div class="sp-grid sp-grid--3"><article class="sp-card" data-aos="fade-up" data-aos-delay="0"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-heart"/></svg></span><h3>Respect</h3><p>You will be treated politely and fairly.</p></article><article class="sp-card" data-aos="fade-up" data-aos-delay="100"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-eye"/></svg></span><h3>Transparency</h3><p>We explain decisions clearly and honestly.</p></article><article class="sp-card" data-aos="fade-up" data-aos-delay="200"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-trend"/></svg></span><h3>Improvement</h3><p>We use feedback to make our work better.</p></article></div>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="fb-faq" aria-labelledby="fb-faq-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">FAQs</span><h2 class="sec__title" id="fb-faq-title">Feedback <span>Questions</span></h2></div>
+        <div class="row justify-content-center"><div class="col-lg-9" data-aos="fade-up"><div class="faq__list" data-faq>
+              <div class="faq__item is-open">
+                <h3><button type="button" class="faq__q" id="fbq1" aria-expanded="true" aria-controls="fba1"><span>How long will a complaint take to resolve?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="fba1" role="region" aria-labelledby="fbq1"><div><p>We acknowledge complaints within 2 business days and aim to respond fully as soon as we have reviewed the facts. Complex cases may take longer, and we will keep you informed.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="fbq2" aria-expanded="false" aria-controls="fba2"><span>What if I am not happy with the outcome?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="fba2" role="region" aria-labelledby="fbq2"><div><p>You can ask for a further review by a director, and we are open to independent mediation. Your legal rights are not affected.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="fbq3" aria-expanded="false" aria-controls="fba3"><span>Will my feedback be shared publicly?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="fba3" role="region" aria-labelledby="fbq3"><div><p>No. We do not publish your feedback or your name without your clear permission.</p></div></div>
+              </div></div></div></div>
+      </div>
+    </section>
+
+    <section class="sec cta cta--tint" aria-labelledby="cta-title">
+      <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+      <span class="cta__orb cta__orb--1" data-parallax="0.25" aria-hidden="true"></span><span class="cta__orb cta__orb--2" data-parallax="-0.2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="cta__inner" data-aos="zoom-in">
+          <span class="sec__label">Need Help Right Now?</span>
+          <h2 class="sec__title" id="cta-title">Contact Our <span>Support Team</span></h2>
+          <p class="sec__lead">For a problem that needs fixing today, open a ticket or call us.</p>
+          <div class="cta__actions"><a href="submit-ticket.html" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Submit a Ticket</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></a><a href="tel:9711101482" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Call 9711101482</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-phone"/></svg></span></a></div>
+          <p class="sp-cta-note">This page gives general information and is not a contract or a guarantee. Response times are targets. Terms for any project or support plan are set out in your written agreement.</p>
+        </div>
+      </div>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+    </section>
+
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/search-index.js"></script>
+  <script src="assets/js/header-markup.js"></script>
+  <script src="assets/js/footer-markup.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/components.js"></script>
+  <!-- Shared by the six help and support pages -->
+  <script src="assets/js/support.js"></script>
+</body>
+
+</html>

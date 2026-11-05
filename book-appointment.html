@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Consultation | BrijHub Help &amp; Support</title>
+  <meta name="description" content="Book a free consultation with BrijHub. Tell us your preferred date and time and we will confirm by email.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Common styles (every page) -->
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <!-- Shared by the six help and support pages -->
+  <link rel="stylesheet" href="assets/css/support.css">
+  <noscript>
+    <style>
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      .pg-hero__inner > * { opacity: 1 !important; transform: none !important; }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div data-include="header"></div>
+
+  <main id="main" class="sp-page sp-page--book">
+
+    <!-- ================= Banner ================= -->
+    <section class="pg-hero" aria-labelledby="pg-title">
+      <div class="pg-hero__bg" aria-hidden="true"></div>
+      <div class="pg-hero__grid" aria-hidden="true"></div>
+      <span class="pg-hero__orb pg-hero__orb--1" aria-hidden="true"></span><span class="pg-hero__orb pg-hero__orb--2" aria-hidden="true"></span>
+      <span class="pg-hero__ring pg-hero__ring--1" aria-hidden="true"></span><span class="pg-hero__ring pg-hero__ring--2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="pg-hero__inner">
+          <nav aria-label="Breadcrumb"><ol class="pg-hero__crumbs"><li><a href="index.html">Home</a></li><li>Help &amp; Support</li><li aria-current="page">Book a Consultation</li></ol></nav>
+          <span class="pg-hero__eyebrow">Book A Consultation</span>
+          <h1 class="pg-hero__title" id="pg-title">Book Your Free <span>Consultation</span></h1>
+          <p class="pg-hero__text">Talk to one of our experts about your idea. Choose a convenient day and time, and we will confirm by email.</p>
+          <div class="pg-hero__actions"><a href="#form" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Choose a Time</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-calendar"/></svg></span></a><a href="tel:9711101482" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Prefer to call?</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-phone"/></svg></span></a></div>
+        </div>
+      </div>
+      <div class="pg-hero__wave" aria-hidden="true">
+        <svg class="pg-hero__wave-back" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+        <svg class="pg-hero__wave-front" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0 60 C120 10 240 10 360 60 C480 110 600 110 720 60 C840 10 960 10 1080 60 C1200 110 1320 110 1440 60 C1560 10 1680 10 1800 60 C1920 110 2040 110 2160 60 C2280 10 2400 10 2520 60 C2640 110 2760 110 2880 60 V120 H0 Z"/></svg>
+      </div>
+    </section>
+
+    <!-- ================= Form + side panel ================= -->
+    <section class="sec sp-light sp-dots" id="form" aria-labelledby="form-title">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-7" data-aos="fade-right">
+            <span class="sec__label">Book Online</span>
+            <h2 class="sec__title" id="form-title">Pick A Day <span>That Suits You</span></h2>
+            <p class="sec__lead sp-form__lead">Share a few details and your preferred time. A BrijHub expert will confirm your consultation by email.</p>
+            <div class="sp-form__wrap">
+              <form data-form novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="bk-name">Full name <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="bk-name" name="bk-name" type="text" placeholder="Your name" autocomplete="name" data-rule="required min:2"><p class="form-error-custom" id="bk-name-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="bk-email">Email address <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="bk-email" name="bk-email" type="email" placeholder="you@example.com" autocomplete="email" data-rule="required email"><p class="form-error-custom" id="bk-email-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="bk-phone">Phone number</label><input class="form-control-custom" id="bk-phone" name="bk-phone" type="tel" placeholder="+00 000 000 0000" autocomplete="tel" data-rule="phone"><p class="form-error-custom" id="bk-phone-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="bk-topic">What would you like to discuss? <span class="sp-req" aria-hidden="true">*</span></label><select class="form-select-custom" id="bk-topic" name="bk-topic" data-rule="required"><option value="">Choose a topic</option><option>Custom software</option><option>Mobile app</option><option>Cloud &amp; DevOps</option><option>AI &amp; data analytics</option><option>Cyber security</option><option>IT support &amp; consulting</option><option>Something else</option></select><p class="form-error-custom" id="bk-topic-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="bk-date">Preferred date <span class="sp-req" aria-hidden="true">*</span></label><input class="form-control-custom" id="bk-date" name="bk-date" type="date" placeholder="" data-rule="required" data-min-today><p class="form-error-custom" id="bk-date-err" hidden></p></div>
+                  <div class="col-md-6 form-group-custom"><label class="form-label-custom" for="bk-type">Meeting type <span class="sp-req" aria-hidden="true">*</span></label><select class="form-select-custom" id="bk-type" name="bk-type" data-rule="required"><option value="">Choose a type</option><option>Phone call</option><option>Video call</option></select><p class="form-error-custom" id="bk-type-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="bk-slot">Preferred time of day <span class="sp-req" aria-hidden="true">*</span></label><div class="sp-slots" role="group" aria-label="Preferred time of day" data-slots="bk-slot"><button type="button" class="chip" data-slot="Morning" aria-pressed="false">Morning</button><button type="button" class="chip" data-slot="Afternoon" aria-pressed="false">Afternoon</button><button type="button" class="chip" data-slot="Evening" aria-pressed="false">Evening</button></div><input type="hidden" id="bk-slot" name="bk-slot" data-rule="required"><p class="form-error-custom" id="bk-slot-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-label-custom" for="bk-notes">Anything we should know? (optional)</label><textarea class="form-control-custom form-textarea-custom" id="bk-notes" name="bk-notes" placeholder="A few words about your project help us prepare."></textarea><p class="form-error-custom" id="bk-notes-err" hidden></p></div>
+                  <div class="col-12 form-group-custom"><label class="form-check-custom"><input type="checkbox" id="bk-consent" name="consent" data-rule="checked"><span>I agree that BrijHub may use my details to reply to this request, as described in the <a href="privacy-policy.html">Privacy Policy</a>.</span></label><p class="form-error-custom" id="bk-consent-err" hidden></p></div>
+                </div>
+                <div class="form-submit-row">
+                  <button type="submit" class="hero__btn hero__btn--solid"><span class="hero__btn-label">Request Consultation</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></button>
+                  <span class="sp-form__note">This is a request. We confirm the exact time by email.</span>
+                </div>
+              </form>
+              <div class="form-success-box" data-form-success hidden role="status"><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Thank you, we have received your request.</strong><p>We will email you to confirm the exact date and time.</p></div></div>
+            </div>
+          </div>
+          <div class="col-lg-5" data-aos="fade-left">
+            <aside class="sp-side"><span class="sp-side__orb" aria-hidden="true"></span>
+              <div class="sp-side__person"><img src="assets/images/brijhub2.jpg" alt="Brij Pant, Founder &amp;amp; CEO at BrijHub" width="960" height="1192" loading="lazy" decoding="async"><span><strong>Brij Pant</strong><small>Founder &amp; CEO</small></span></div>
+              <h3>What To Expect</h3>
+              <ul class="sp-side__list"><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>About 30 minutes</strong><p>A relaxed call to understand your goals.</p></div></li><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Free, no obligation</strong><p>There is no cost and no pressure to continue.</p></div></li><li><svg class="ix" aria-hidden="true"><use href="#ix-check"/></svg><div><strong>Clear next steps</strong><p>You leave with ideas and a suggested way forward.</p></div></li></ul>
+              <p class="sp-side__note">Your request is not confirmed until you receive our email. You can also call us on <a href="tel:9711101482">9711101482</a>.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="cover" aria-labelledby="cover-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">On The Call</span><h2 class="sec__title" id="cover-title">What We Can <span>Cover Together</span></h2><p class="sec__lead">Come with a rough idea or a detailed plan. Both are welcome.</p></div>
+        <div class="sp-grid"><article class="sp-card" data-aos="fade-up" data-aos-delay="0"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-target"/></svg></span><h3>Your goals</h3><p>What you want to achieve and how you will measure success.</p></article><article class="sp-card" data-aos="fade-up" data-aos-delay="100"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-layers"/></svg></span><h3>Scope &amp; options</h3><p>Ways to approach the work, from a first version to a full product.</p></article><article class="sp-card" data-aos="fade-up" data-aos-delay="200"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-calendar"/></svg></span><h3>Timeline</h3><p>A realistic view of how long each stage may take.</p></article><article class="sp-card" data-aos="fade-up" data-aos-delay="300"><span class="sp-card__icon"><svg class="ix" aria-hidden="true"><use href="#ix-award"/></svg></span><h3>Budget</h3><p>What affects cost, so you can plan with confidence.</p></article></div>
+      </div>
+    </section>
+
+    <section class="sec sp-tint sp-blob" id="bk-faq" aria-labelledby="bk-faq-title">
+      <div class="container">
+        <div class="sec__head" data-aos="fade-up"><span class="sec__label">FAQs</span><h2 class="sec__title" id="bk-faq-title">Booking <span>Questions</span></h2></div>
+        <div class="row justify-content-center"><div class="col-lg-9" data-aos="fade-up"><div class="faq__list" data-faq>
+              <div class="faq__item is-open">
+                <h3><button type="button" class="faq__q" id="bkq1" aria-expanded="true" aria-controls="bka1"><span>Do I need to prepare anything?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="bka1" role="region" aria-labelledby="bkq1"><div><p>Not required. A few notes about your goals, users and deadlines will help us give better advice.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="bkq2" aria-expanded="false" aria-controls="bka2"><span>Can I change or cancel my consultation?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="bka2" role="region" aria-labelledby="bkq2"><div><p>Yes. Reply to our confirmation email or call us, and we will find another time.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="bkq3" aria-expanded="false" aria-controls="bka3"><span>Who will I speak to?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="bka3" role="region" aria-labelledby="bkq3"><div><p>A senior member of our team who understands the service you are interested in.</p></div></div>
+              </div>
+              <div class="faq__item">
+                <h3><button type="button" class="faq__q" id="bkq4" aria-expanded="false" aria-controls="bka4"><span>Is my information kept private?</span><span class="faq__icon" aria-hidden="true"></span></button></h3>
+                <div class="faq__a" id="bka4" role="region" aria-labelledby="bkq4"><div><p>Yes. We handle your details as described in our <a href="privacy-policy.html">Privacy Policy</a>, and we can sign an NDA if you wish.</p></div></div>
+              </div></div></div></div>
+      </div>
+    </section>
+
+    <section class="sec cta cta--tint" aria-labelledby="cta-title">
+      <svg class="wave wave--top" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+      <span class="cta__orb cta__orb--1" data-parallax="0.25" aria-hidden="true"></span><span class="cta__orb cta__orb--2" data-parallax="-0.2" aria-hidden="true"></span>
+      <div class="container">
+        <div class="cta__inner" data-aos="zoom-in">
+          <span class="sec__label">Not Ready To Book?</span>
+          <h2 class="sec__title" id="cta-title">Ask Us A <span>Quick Question</span></h2>
+          <p class="sec__lead">Send a message and we will reply by email.</p>
+          <div class="cta__actions"><a href="contact.html" class="hero__btn hero__btn--primary"><span class="hero__btn-label">Contact Us</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-mail"/></svg></span></a><a href="faqs.html" class="hero__btn hero__btn--ghost"><span class="hero__btn-label">Read FAQs</span><span class="hero__btn-icon"><svg class="ix" aria-hidden="true"><use href="#ix-arrow"/></svg></span></a></div>
+          <p class="sp-cta-note">This page gives general information and is not a contract or a guarantee. Response times are targets. Terms for any project or support plan are set out in your written agreement.</p>
+        </div>
+      </div>
+      <svg class="wave wave--bottom" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0h1440v22C1200 62 960 4 720 24S240 62 0 22z"/></svg>
+    </section>
+
+  </main>
+
+  <div data-include="footer"></div>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/search-index.js"></script>
+  <script src="assets/js/header-markup.js"></script>
+  <script src="assets/js/footer-markup.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/components.js"></script>
+  <!-- Shared by the six help and support pages -->
+  <script src="assets/js/support.js"></script>
+</body>
+
+</html>
